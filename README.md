@@ -13,38 +13,6 @@ A lightweight browser-based text encryption and decryption tool built with vanil
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone or Download the Project
-
-```bash
-git clone https://github.com/your-username/text-encryptor.git
-cd text-encryptor
-```
-
-Or simply download the files and open `index.html` in your browser.
-
-### 2. Open in Browser
-
-Just open `index.html` directly — no build tools or dependencies needed.
-
-```bash
-open index.html
-```
-
----
-
-## 📁 Project Structure
-
-```
-text-encryptor/
-├── index.html       # Main HTML page with input fields and buttons
-├── style.css        # Styling for the UI
-└── script.js        # Core encryption/decryption logic
-```
-
----
-
 ## 🧠 How It Works
 
 This tool uses a **Vigenère cipher** — a classical key-based substitution cipher.
@@ -76,46 +44,6 @@ newIndex = (encryptedCharIndex - keyCharIndex + alphabetLength) % alphabetLength
 ### Key Looping
 
 If the message is longer than the key, the key **repeats**. For example, a key of `"AB"` on a 6-character message uses `A B A B A B`.
-
----
-
-## 🖥️ Usage
-
-1. Type your **message** in the message input field
-2. Enter a **key** (any string of characters from the supported alphabet)
-3. Click **Encrypt** to encrypt your message
-4. Click **Decrypt** to decrypt a previously encrypted message using the same key
-
-> ⚠️ The same key must be used for both encryption and decryption. Using a different key will produce incorrect output.
-
----
-
-## ✅ Supported Characters
-
-| Category | Characters |
-|---|---|
-| Uppercase Letters | `A–Z` |
-| Lowercase Letters | `a–z` |
-| Digits | `0–9` |
-| Punctuation & Symbols | `. , ? ! ' _ - & @ # $ % * ( ) / : < > \| + =` |
-| Space | ` ` |
-
----
-
-## ⚠️ Known Limitations
-
-- Characters **outside** the supported alphabet are passed through without encryption
-- The cipher is **symmetric** — the same key encrypts and decrypts
-- This is a classical cipher and is **not suitable for real security or cryptographic purposes**
-- Key length affects security — longer, more random keys are harder to crack
-
----
-
-## 🛠️ Built With
-
-- HTML
-- CSS
-- Vanilla JavaScript (no libraries or frameworks)
 
 ---
 
