@@ -13,7 +13,7 @@ A lightweight browser-based text encryption and decryption tool built with vanil
 
 ---
 
-## 🧠 How It Works
+## 💡 How It Works
 
 This tool uses a **Vigenère cipher** — a classical key-based substitution cipher.
 
@@ -44,9 +44,3 @@ newIndex = (encryptedCharIndex - keyCharIndex + alphabetLength) % alphabetLength
 ### Key Looping
 
 If the message is longer than the key, the key **repeats**. For example, a key of `"AB"` on a 6-character message uses `A B A B A B`.
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
